@@ -78,3 +78,58 @@
 * {
   font-family: "Outfit", serif;
 }
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 80px; /* Adjust spacing between logos */
+  width: max-content;
+}
+
+.carousel-logo {
+  height: 80px; /* Adjust size */
+  object-fit: contain;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  transition: transform 0.2s ease-in-out;
+  border-radius: 15px;
+}
+
+.image:hover {
+  box-shadow: 5px 5px #004badb5;
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  /* height: 200px; */
+  object-fit: cover;
+}
+
+.card .description {
+  font-family: "Karla", sans-serif;
+}
+
+.description {
+  font-family: "Karla", sans-serif;
+}
+
+.card .title {
+  font-weight: bold;
+}

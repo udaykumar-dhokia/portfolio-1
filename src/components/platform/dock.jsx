@@ -22,14 +22,18 @@ export function DockDemo() {
   ];
 
   return (
-    <div className="fixed z-40 -bottom-12 left-0 right-0 rounded-full hover:bottom-1 transition-all">
+    <div className="fixed z-50 -bottom-s-12 bottom-1 shadow-xl left-0 right-0 rounded-full hover:bottom-1 transition-all">
       <Dock
         direction="middle"
         className={theme == 1 ? `bg-gray-100` : "bg-black"}
       >
         <DockIcon size={24} color="text-gray-600">
           <a href="/">
-            <img src={theme == 0? logo2 : logo} alt="" className="rounded-full" />
+            <img
+              src={theme == 0 ? logo2 : logo}
+              alt=""
+              className="rounded-full"
+            />
           </a>
         </DockIcon>
         <Separator orientation="vertical" className="h-full" />
@@ -193,5 +197,3 @@ export function DockDemo() {
     </div>
   );
 }
-
-
